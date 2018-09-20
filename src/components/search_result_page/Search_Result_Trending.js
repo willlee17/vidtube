@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 import TrendingVideoList from '../main_page/trending_video_list';
+import api_key from '../../keys'
 
-const API_KEY = 'AIzaSyCVx1MIW75Ju15aOywc7J2Qi3psN0Os5kw';
+const API_KEY = api_key;
 
 class SearchResultTrending extends Component {
   constructor(props) {

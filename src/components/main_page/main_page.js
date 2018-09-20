@@ -5,8 +5,9 @@ import MusicVideoList from './music_video_list';
 import SportsVideoList from './sports_video_list';
 import GameVideoList from './game_video_list.js';
 import MovieVideoList from './movie_video_list';
+import api_key from '../../keys'
 
-const API_KEY = 'AIzaSyCVx1MIW75Ju15aOywc7J2Qi3psN0Os5kw';
+const API_KEY = api_key;
 
 class MainPage extends Component {
   constructor(props) {
