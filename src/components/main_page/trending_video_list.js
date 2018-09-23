@@ -10,9 +10,9 @@ class TrendingVideoList extends Component {
     })
 
     return (
-      <div className="container">
-        <ul className="list-inline">
-          Trending Videos
+      <div className="container videos-list-trending d-flex flex-wrap row-hl">
+        <h4> Trending </h4>
+        <ul className="list-inline ">
           {videos}
         </ul>
       </div>

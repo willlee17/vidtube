@@ -57,12 +57,15 @@ class MainPage extends Component {
 
   render() {
     return(
-      <div>
-        <h1>Main Page</h1>
+      <div class="container">
         <TrendingVideoList trendingVideos={this.state.trendingVideos} />
+        <hr />
         <MusicVideoList musicVideos={this.state.musicVideos} />
+        <hr />
         <SportsVideoList sportsVideos={this.state.sportsVideos} />
+        <hr />
         <GameVideoList gameVideos={this.state.gameVideos} />
+        <hr />
         <MovieVideoList movieVideos={this.state.movieVideos} />
       </div>
     )

@@ -6,6 +6,7 @@ class VideoListItem extends Component {
     const imgURL = this.props.video.snippet.thumbnails.default.url;
     const videoTitle = this.props.video.snippet.title;
     const videoToSend = this.props.video;
+    const videoChannelTitle = this.props.video.snippet.channelTitle;
 
     return(
       <li className="list-inline-item">
@@ -18,11 +19,14 @@ class VideoListItem extends Component {
           }
         }}>
           <div className="video-list media">
-            <div className="media-left">
-              <img className="media-object" src = {imgURL}/>
-            </div>
-            <div className="media-body">
-              <div className="media-heading">{videoTitle}</div>
+            <div>
+              <div>
+                <img className="media-object" src = {imgURL}/>
+              </div>
+              <div className="media-info">
+                <div className="media-info-title">{videoTitle}</div>
+                <div className="media-info-channel-title">{videoChannelTitle}</div>
+              </div>
             </div>
           </div>
         </Link>

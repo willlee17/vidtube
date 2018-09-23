@@ -68,7 +68,6 @@ class Navbar extends Component {
                       value={this.state.search}
                       onChange={this.onSearchChange}
                       placeholder="Search for a video here..."/>
-                    {/* <button class="btn btn-outline-success">Search</button> */}
                     <Link to={{pathname: "/search_result/", state: {search: {search}}}} class="btn btn-outline-success">Search</Link>
                 </form>
                 <ul className="navbar-nav ml-auto">

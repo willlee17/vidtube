@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SearchBar from './searchbar.js';
 import VideoList from './video_list.js';
 import YTSearch from 'youtube-api-search';
 import VideoDetail from './video_detail.js';
@@ -14,8 +13,10 @@ class MainVideoPage extends Component {
     this.state = {
       videos: [],
     }
-    const videoTitle = this.props.location.state.videoTitle
-    this.videoSearch(videoTitle);
+  }
+
+  componentDidMount() {
+    this.videoSearch(this.props.location.state.videoTitle)
   }
 
   videoSearch = (term) => {
@@ -27,12 +28,9 @@ class MainVideoPage extends Component {
   }
 
   render() {
-    const videoSearch = _.debounce((term) => { this.videoSearch(term)}, 300)
     const { videoToSend } = this.props.location.state
-    console.log(videoToSend)
     return (
-        <div className="App">
-          <SearchBar onSearchTermChange={videoSearch}/>
+        <div className="App d-flex justify-content-around row-hl">
           <VideoDetail video={videoToSend}/>
           <VideoList videos={this.state.videos}/>
         </div>

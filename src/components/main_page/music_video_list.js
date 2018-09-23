@@ -10,9 +10,9 @@ class MusicVideoList extends Component {
     })
 
     return (
-      <div className="container">
+      <div className="container videos-list d-flex flex-wrap row-hl">
+        <h4> Music </h4>
         <ul className="list-inline">
-          Music Videos
           {videos}
         </ul>
       </div>

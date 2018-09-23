@@ -2,4 +2,37 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: rgb(232, 232, 232) !important;
+}
+
+img {
+  height: 120px;
+  width: 200px;
+}
+
+/* Main Page Videos Lists */
+.videos-list-trending {
+  margin-top: 50px;
+}
+
+.videos-list {
+  margin-top: 40px;
+}
+
+.media-info .media-info-channel-title{
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+}
+
+.media-info .media-info-title{
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  width: 200px
+}
+
+/* Video Page with Video Player and Related Videos */
+.related-videos, .list-group-item {
+  background-color: rgb(232, 232, 232) !important;
 }

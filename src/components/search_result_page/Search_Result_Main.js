@@ -11,7 +11,16 @@ class SearchResultMain extends Component {
     this.state = {
       searchResultVideos: []
     }
+  }
+
+  componentDidMount() {
     this.videoSearch(this.props.location.state.search.search)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps !== this.props) {
+      this.videoSearch(nextProps.location.state.search.search)
+    }
   }
 
   videoSearch = (term) => {
@@ -21,6 +30,7 @@ class SearchResultMain extends Component {
       })
     })
   }
+
 
   render() {
     const searchResult = this.props.location.state.search.search
