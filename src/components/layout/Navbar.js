@@ -32,7 +32,7 @@ class Navbar extends Component {
   render() {
     const search = this.state.search;
     return(
-      <nav className="navbar navbar-expand-sm navbar-light bg-light mb-3 sticky-top">
+      <nav className="navbar navbar-expand-sm navbar-light bg-light mb-3 sticky-top shadow-sm">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item dropdown">
                 <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Videos</a>
@@ -61,14 +61,15 @@ class Navbar extends Component {
                   <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <form onSubmit={this.onSearchSubmit} class="form-inline ml-auto">
+                <form onSubmit={this.onSearchSubmit} class="form-inline ml-auto" style={{width: "60%"}}>
                     <input
                       type="text"
-                      class="form-control mr-2"
+                      style={{width: "80%"}}
+                      className="form-control mr-2"
                       value={this.state.search}
                       onChange={this.onSearchChange}
-                      placeholder="Search for a video here..."/>
-                    <Link to={{pathname: "/search_result/", state: {search: {search}}}} class="btn btn-outline-success">Search</Link>
+                      placeholder="Search..."/>
+                    <Link to={{pathname: "/search_result/", state: {search: {search}}}} class="btn btn-success">Search</Link>
                 </form>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">

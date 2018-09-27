@@ -10,7 +10,7 @@ class MusicVideoList extends Component {
     })
 
     return (
-      <div className="container videos-list d-flex flex-wrap row-hl">
+      <div className="container videos-list d-flex justify-content-between flex-wrap row-hl"  style={{marginLeft: "15px"}}>
         <h4> Music </h4>
         <ul className="list-inline">
           {videos}

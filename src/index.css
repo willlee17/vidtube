@@ -21,7 +21,7 @@ img {
 
 .media-info .media-info-channel-title{
   font-size: 12px;
-  color: black;
+  color: grey;
   text-decoration: none;
 }
 
@@ -32,7 +32,42 @@ img {
   width: 200px
 }
 
+.media-info-description {
+  color: grey;
+  font-size: 12px;
+}
+
 /* Video Page with Video Player and Related Videos */
 .related-videos, .list-group-item {
   background-color: rgb(232, 232, 232) !important;
 }
+
+.related-videos {
+  color: black;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.related-videos-channel {
+  color: grey;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* Searchbar Results */
+.search-result-title {
+  color: black;
+}
+
+.search-result-channel-title {
+  color: grey;
+  font-size: 12px;
+}
+
+.search-result-description {
+  color: grey;
+  font-size: 12px;
+}
+
+/*  Navbar  */

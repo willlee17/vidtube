@@ -17,7 +17,7 @@ class SearchResultMain extends Component {
     this.videoSearch(this.props.location.state.search.search)
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps(nextProps) { //For when I type in new search requests
     if(nextProps !== this.props) {
       this.videoSearch(nextProps.location.state.search.search)
     }
@@ -36,7 +36,6 @@ class SearchResultMain extends Component {
     const searchResult = this.props.location.state.search.search
     return(
       <div>
-        <h1>Search Result: {searchResult} </h1>
         <SearchResultList searchResultVideos={this.state.searchResultVideos} />
       </div>
     )

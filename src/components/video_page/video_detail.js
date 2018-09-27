@@ -12,9 +12,13 @@ const VideoDetail = (props) => {
       <div className="embed-responsive embed-responsive-16by9">
         <iframe className="embed-responsive-item" src={url}></iframe>
       </div>
+      <br></br>
       <div className="details">
-        <div>{props.video.snippet.title}</div>
-        <div>{props.video.snippet.description}</div>
+        <div style={{fontSize: "20px"}}>{props.video.snippet.title}</div>
+        by: {props.video.snippet.channelTitle}
+        <hr />
+        More info:
+        <div  style={{fontSize: "15px"}}>{props.video.snippet.description}</div>
       </div>
     </div>
   )

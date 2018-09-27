@@ -10,7 +10,7 @@ class TrendingVideoList extends Component {
     })
 
     return (
-      <div className="container videos-list-trending d-flex flex-wrap row-hl">
+      <div className="container videos-list-trending d-flex justify-content-between flex-wrap row-hl" style={{marginLeft: "15px"}}>
         <h4> Trending </h4>
         <ul className="list-inline ">
           {videos}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
-import TrendingVideoList from '../main_page/trending_video_list';
 import api_key from '../../keys'
+import SearchResultList from './Search_Result_List';
 
 const API_KEY = api_key;
 
@@ -9,16 +9,19 @@ class SearchResultTrending extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        trendingVideos: [],
+        searchResultVideos: [],
     }
-    this.videoSearch()
+  }
+
+  componentDidMount() {
+    this.videoSearch();
   }
 
   videoSearch = () => {
     // Trending
     YTSearch({ key: API_KEY, term: ""}, (videos) => {
       this.setState({
-        trendingVideos: videos,
+        searchResultVideos: videos,
       })
     })
   }
@@ -26,8 +29,7 @@ class SearchResultTrending extends Component {
   render() {
     return(
       <div className="container">
-        <h1>Trending Videos</h1>
-        <TrendingVideoList trendingVideos={this.state.trendingVideos} />
+        <SearchResultList searchResultVideos={this.state.searchResultVideos} />
       </div>
     )
   }

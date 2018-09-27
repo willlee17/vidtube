@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 import MovieVideoList from '../main_page/movie_video_list';
 import api_key from '../../keys'
+import SearchResultList from './Search_Result_List';
+
 
 const API_KEY = api_key;
 
@@ -9,7 +11,7 @@ class SearchResultMovies extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        moviesVideos: [],
+        searchResultVideos: [],
     }
     this.videoSearch()
   }
@@ -18,7 +20,7 @@ class SearchResultMovies extends Component {
     // Music
     YTSearch({ key: API_KEY, term: "movies"}, (videos) => {
       this.setState({
-        moviesVideos: videos,
+        searchResultVideos: videos,
       })
     })
   }
@@ -26,8 +28,7 @@ class SearchResultMovies extends Component {
   render() {
     return(
       <div className="container">
-        <h1>Movies Videos</h1>
-        <MovieVideoList movieVideos={this.state.moviesVideos} />
+        <SearchResultList searchResultVideos={this.state.searchResultVideos} />
       </div>
     )
   }

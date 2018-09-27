@@ -30,7 +30,7 @@ class MainVideoPage extends Component {
   render() {
     const { videoToSend } = this.props.location.state
     return (
-        <div className="App d-flex justify-content-around row-hl">
+        <div className="App d-flex justify-content-around row-hl container" style={{marginTop: "25px"}}>
           <VideoDetail video={videoToSend}/>
           <VideoList videos={this.state.videos}/>
         </div>
