@@ -32,10 +32,10 @@ class Navbar extends Component {
   render() {
     const search = this.state.search;
     return(
-      <nav className="navbar navbar-expand-sm navbar-light bg-light mb-3 sticky-top shadow-sm">
+      <nav className="navbar navbar-expand-sm navbar-light mb-3 sticky-top shadow-sm">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item dropdown">
-                <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Videos</a>
+                <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Genres</a>
                 <div className="dropdown-menu">
                     <Link className="dropdown-item" to={{
                       pathname: '/search_result/trending',
@@ -56,7 +56,7 @@ class Navbar extends Component {
             </li>
           </ul>
           <div className="container">
-              <Link to="/" className="navbar-brand" href="#">VidTube</Link>
+              <Link to="/main" className="navbar-brand" href="#">VidTube</Link>
               <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                   <span className="navbar-toggler-icon"></span>
               </button>
@@ -69,11 +69,13 @@ class Navbar extends Component {
                       value={this.state.search}
                       onChange={this.onSearchChange}
                       placeholder="Search..."/>
-                    <Link to={{pathname: "/search_result/", state: {search: {search}}}} class="btn btn-success">Search</Link>
+                    <Link to={{pathname: "/search_result/", state: {search: {search}}}} className="btn btn-info btn-md">
+                      Search
+                    </Link>
                 </form>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Home</a>
+                        <Link to="/" className="nav-link" href="#">Home</Link>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">About</a>

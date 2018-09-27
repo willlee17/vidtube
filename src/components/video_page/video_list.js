@@ -11,8 +11,8 @@ const VideoList = (props) => {
   })
 
   return(
-    <ul className="col-md-4 list-group related-videos">
-      <h6 style={{marginLeft: "20px"}}>Related Videos</h6>
+    <ul className="col-md-4 list-group related-videos shadow-lg">
+      <h6 style={{marginLeft: "20px", marginTop: "20px"}}>Related Videos</h6>
       {videoItems}
     </ul>
   )

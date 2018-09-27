@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: rgb(232, 232, 232) !important;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(232, 232, 232) #F7F9FB  !important; */
+  background-image: linear-gradient(#F7F9FB, #fbf6f2) !important;
 }
 
 img {
@@ -39,13 +40,14 @@ img {
 
 /* Video Page with Video Player and Related Videos */
 .related-videos, .list-group-item {
-  background-color: rgb(232, 232, 232) !important;
+  background-color: #fbf6f2 !important;
 }
 
 .related-videos {
   color: black;
   font-size: 14px;
   margin-left: 10px;
+
 }
 
 .related-videos-channel {
@@ -71,3 +73,6 @@ img {
 }
 
 /*  Navbar  */
+.navbar {
+  background-image: linear-gradient(to bottom right, #fbf6f2, #F7F9FB);
+}

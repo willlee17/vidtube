@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MainVideoPage from './components/video_page/main_video_page';
 import MainPage from './components/main_page/main_page';
 import Navbar from './components/layout/Navbar';
+import LandingPage from './components/landing_page/LandingPage';
 import SearchResultTrending from './components/search_result_page/Search_Result_Trending';
 import SearchResultMusic from './components/search_result_page/Search_Result_Music.js';
 import SearchResultSports from './components/search_result_page/Search_Result_Sports.js';
@@ -19,7 +20,8 @@ class App extends Component {
       <Router>
         <div>
           <Navbar />
-          <Route exact path="/" component={MainPage} />
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/main" component={MainPage} />
           <Route exact path="/main_video/" component={MainVideoPage}/>
           <Route exact path="/search_result/" component={SearchResultMain}/>
           <Route exact path="/search_result/trending" component={SearchResultTrending}/>
