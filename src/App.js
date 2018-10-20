@@ -20,8 +20,7 @@ class App extends Component {
       <Router>
         <div>
           <Navbar />
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/main" component={MainPage} />
+          <Route exact path="/" component={MainPage} />
           <Route exact path="/main_video/" component={MainVideoPage}/>
           <Route exact path="/search_result/" component={SearchResultMain}/>
           <Route exact path="/search_result/trending" component={SearchResultTrending}/>

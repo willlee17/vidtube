@@ -16,11 +16,6 @@ class Navbar extends Component {
     this.setState({
       counter: this.state.counter++
     })
-    // if (this.state.counter > 0) {
-    //   return <Redirect to={{
-    //     pathname: "/search_result"
-    //   }}
-    // } />
   }
 
   onSearchChange = (e) => {
@@ -77,16 +72,6 @@ class Navbar extends Component {
                     <li className="nav-item">
                         <Link to="/" className="nav-link" href="#">Home</Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
-                    </li>
-
-                    {/* <li className="nav-item">
-                        <a className="nav-link" href="#">Services</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Contact</a>
-                    </li> */}
                 </ul>
               </div>
           </div>
