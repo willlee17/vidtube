@@ -51,7 +51,7 @@ class Navbar extends Component {
             </li>
           </ul>
           <div className="container">
-              <Link to="/main" className="navbar-brand" href="#">VidTube</Link>
+              <Link to="/" className="navbar-brand" href="#">VidTube</Link>
               <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                   <span className="navbar-toggler-icon"></span>
               </button>
