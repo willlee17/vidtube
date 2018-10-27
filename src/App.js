@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MainVideoPage from './components/video_page/main_video_page';
 import MainPage from './components/main_page/main_page';
 import Navbar from './components/layout/Navbar';
-import LandingPage from './components/landing_page/LandingPage';
 import SearchResultTrending from './components/search_result_page/Search_Result_Trending';
 import SearchResultMusic from './components/search_result_page/Search_Result_Music.js';
 import SearchResultSports from './components/search_result_page/Search_Result_Sports.js';
