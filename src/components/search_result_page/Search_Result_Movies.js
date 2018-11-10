@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 import MovieVideoList from '../main_page/movie_video_list';
-import api_key from '../../keys'
+import api_key from '../../keys';
 import SearchResultList from './Search_Result_List';
 
 
