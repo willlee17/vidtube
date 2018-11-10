@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 import SearchResultList from './Search_Result_List';
-import api_key from '../../keys';
+// import api_key from '../../keys';
 
-const API_KEY = api_key;
+const API_KEY = 'AIzaSyCVx1MIW75Ju15aOywc7J2Qi3psN0Os5kw';
 
 class SearchResultMain extends Component {
   constructor(props) {
